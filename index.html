@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Zadanie6</title>
+    <link rel="stylesheet" href="src/custom.css">
+</head>
+<body>
+
+<div id="createdBY">Created by Matúš Kanda</div>
+
+    <h1>API zadanie</h1><hr>
+
+    <div id="leftSide">
+        <div id="intro">
+        <span>API slovenských dátumov. Funkcionalita:</span>
+            <ul>
+                <li>Vyhľadanie menín na základe dátumu</li>
+                <li>Vyhľadanie dátumu na základe mena a štátu</li>
+                <li>Výpis štátnych sviatkov na Slovensku</li>
+                <li>Výpis štátnych sviatkov v Českej republike</li>
+                <li>Výpis pamätných dní na Slovensku</li>
+                <li>Pridanie mena k určenému dátumu</li>
+            </ul>
+        </div>
+
+        <div class="codes">
+            <p><span class="bold">GET</span> name by date</p>
+            <div class="url">
+                <p>http://147.175.98.72/Zadanie6/search/?date=dateValue</p>
+            </div>
+        </div>
+
+            <div class="codes">
+                <p><span class="bold">GET</span> date by name&state</p>
+                <div class="url">
+                    <p>http://147.175.98.72/Zadanie6/search/?name=nameValue&&state=stateValue</p>
+                </div>
+            </div>
+
+        <div class="codes">
+            <p><span class="bold">GET</span> holiday SK</p>
+            <div class="url">
+                <p>http://147.175.98.72/Zadanie6/holidaySK</p>
+            </div>
+        </div>
+
+        <div class="codes">
+            <p><span class="bold">GET</span> memorial days SK</p>
+            <div class="url">
+                <p>http://147.175.98.72/Zadanie6/memorialDaySK</p>
+            </div>
+        </div>
+
+        <div class="codes">
+            <p><span class="bold">GET</span> holiday CZ</p>
+            <div class="url">
+                <p>http://147.175.98.72/Zadanie6/holidayCZ</p>
+            </div>
+        </div>
+
+        <div class="codes">
+            <p><span class="bold">POST</span> new name</p>
+            <div class="url">
+                <p>http://147.175.98.72/Zadanie6/addName</p>
+            </div>
+        </div>
+        <div id="bottom"></div>
+    </div>
+
+
+    <div id="rightSide">
+        <h2>Examples</h2>
+        <div id="firstExample">
+            <label for="date">Input date in "mmdd" format</label><br><br>
+            <input id="date" value="0104" onkeydown="first()"><br><br><br>
+            <span style="font-size: 20px">Enter value and check console log for output</span><br>
+<!--            <span style="font-size: 20px">dateValue: 0104 (month day format)</span><br>-->
+<!--            <span>-->
+<!--                <br>{<br><br>-->
+<!--                "SK":"Drahoslav",-->
+<!--                "CZ":"Diana","HU":"Titusz,Leóna",<br>-->
+<!--                "PL":"Elzbiety,Anieli",-->
+<!--                "AT":"Angela"<br><br>-->
+<!--                }-->
+<!--            </span>-->
+
+        </div>
+
+        <div id="secondExample">
+            <label for="name">Input name</label><label style="display: inline-block ; margin-left: 40%" for="state"> State</label><br><br>
+            <input id="name" value="Radomír" onkeydown="second()">
+            <input style="margin-left: 20%" id="state" value="SK" onkeydown="second()"><br><br>
+            <span style="font-size: 20px">Enter value and check console log for output</span><br>
+<!--            <span style="font-size: 20px">nameValue=Radomír && stateValue=SK</span><br>-->
+<!--            <span>-->
+<!--                <br>{<br><br>-->
+<!--                "SK":"Radomír",<br>"den":"0229"<br><br>-->
+<!--                }-->
+<!--            </span>-->
+        </div>
+
+        <div id="thirdExample">
+            <span style="font-size: 20px">Press the button and check console log for output</span><br>
+            <div id="SKholiday" class="btn"><span class="noselect">Press here</span><div class="circle"></div></div>
+        </div>
+
+        <div id="fourthExample">
+            <span style="font-size: 20px">Press the button and check console log for output</span><br>
+            <div id="SKmemorial" class="btn"><span class="noselect">Press here</span><div class="circle"></div></div>
+        </div>
+
+        <div id="fifthExample">
+            <span style="font-size: 20px">Press the button and check console log for output</span><br>
+            <div id="CZholiday" class="btn"><span class="noselect">Press here</span><div class="circle"></div></div>
+        </div>
+
+        <div id="sixthExample">
+            <span style="font-size: 19px">You can use either HTML form or AJAX POST to send the data
+            Variables are <span class="bold">date</span> and <span class="bold">name</span>. In this case we use date=0104 and
+                name=Skuska. Check the console log for return message "Updated"
+            </span>
+            <div id="addNew" class="btn"><span class="noselect">Press here</span><div class="circle"></div></div>
+        </div>
+    </div>
+<!--<div id="nameByDate">-->
+<!--    <label for="getNameByDate">GET name by date</label><br>-->
+<!--    <button id="getNameByDate">Get</button>-->
+<!--    <p id="firstResult"></p>-->
+<!--</div>-->
+
+<!--<div id="dateByNameState">-->
+<!--    <label for="getDateByNameState">GET date by name and state</label><br>-->
+<!--    <button id="getDateByNameState">Get</button>-->
+<!--    <p id="secondResult"></p>-->
+
+<!--</div>-->
+
+<!--<div id="selects">-->
+<!--    <label for="selectOptions">GET different options</label><br>-->
+<!--    <select name="options" id="selectOptions">-->
+<!--        <option> &#45;&#45; select an option &#45;&#45; </option>-->
+<!--        <option value="holidaySK">SK sviatky</option>-->
+<!--        <option value="holidayCZ">CZ sviatky</option>-->
+<!--        <option value=memorialDaySK>SK pamätne dni</option>-->
+<!--    </select>-->
+<!--    <p id="thirdResult"></p>-->
+<!--</div>-->
+
+<!--<div id="add">-->
+<!--    <label for="addName">POST new name</label><br>-->
+<!--    <button id="addName" type="submit">add</button>-->
+<!--    <p id="fourthResult"></p>-->
+<!--</div>-->
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="src/custom.js"></script>
+</body>
+</html>

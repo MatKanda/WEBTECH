@@ -1,0 +1,240 @@
+body{
+    background: whitesmoke;
+    width: 1500px;
+}
+#createdBY{
+    font-size: 30px;
+    font-style: italic;
+    position: absolute;
+    transform: rotate(-10deg);
+    top:32%;
+    right: 20%;
+    opacity: 0.5;
+}
+h1{
+    margin-left: 45%;
+    font-size: 40px;
+    font-style: italic;
+}
+
+h2{
+    font-size: 30px;
+    margin-top: 44%;
+    margin-left: 40%;
+}
+
+hr{
+    height: 12px;
+    border: 0;
+    box-shadow: inset 0 12px 12px -12px rgba(0, 0, 0, 0.5);
+    border-radius: 20px;
+    width: 100%;
+}
+
+#nameByDate{
+    margin-top: 2%;
+    margin-left: 45.5%;
+}
+#dateByNameState{
+    margin-left: 45.5%;
+}
+#selects{
+    margin-left: 45.5%;
+}
+#add{
+    margin-left: 45.5%;
+}
+
+#leftSide{
+    float: left;
+    width: 38.5%;
+    height: 100%;
+    margin-left: 10%;
+    font-size: 25px;
+}
+
+#intro{
+    background: white;
+    padding:4%;
+}
+
+.codes{
+    margin-top: 2%;
+    padding: 4%;
+    background: white;
+}
+
+.bold{
+    font-weight: bold;
+}
+
+.url{
+    background: ghostwhite;
+    font-size: 17px;
+    padding: 1%;
+    width: 100%;
+}
+
+
+#rightSide{
+    float: right;
+    width: 38.5%;
+    height: 100%;
+    margin-right: 10%;
+}
+
+#firstExample{
+    padding:4% ;
+    font-size: 15px;
+    margin-top: 6%;
+    background: white;
+}
+
+#secondExample{
+    margin-top: 8%;
+    padding:3.8% ;
+    font-size: 15px;
+    background: white;
+}
+
+#thirdExample{
+    margin-top: 11%;
+    padding:4% ;
+    font-size: 15px;
+    background: white;
+}
+
+#fourthExample{
+    margin-top: 8%;
+    padding:4% ;
+    font-size: 15px;
+    background: white;
+}
+
+#fifthExample {
+    margin-top: 7%;
+    padding: 4%;
+    font-size: 15px;
+    background: white;
+}
+
+#sixthExample {
+    margin-top: 4.5%;
+    padding: 4%;
+    font-size: 15px;
+    background: white;
+}
+
+#bottom{
+    margin-top: 5%;
+}
+
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+
+/* The Close Button */
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+input{
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    border-bottom: 2px solid black;
+}
+
+#date{
+    width: 10%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.btn {
+    margin-top: 6%;
+    background: #222;
+    height: 50px;
+    min-width: 150px;
+    border: none;
+    border-radius: 10px;
+    color: #eee;
+    font-size: 40px;
+    font-family: 'Cookie', cursive;
+    position: relative;
+    transition: 1s;
+    -webkit-tap-highlight-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    padding-top: 5px;
+}
+
+.btn .circle {
+    width: 5px;
+    height: 5px;
+    background: transparent;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    overflow: hidden;
+    transition: 500ms;
+}
+
+.noselect {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.btn:hover {
+    background: ghostwhite;
+
+    color: black;
+
+}
