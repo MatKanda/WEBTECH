@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <link rel="stylesheet" href="css/custom.css">
+    <script src="js/custom.js"></script>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script></head>
+<body>
+    <h1>Volaký ten grafík</h1>
+
+    <div style="margin-left: 45em">
+        <input type="checkbox" id="visibleSin" checked onchange="visibleSin()">
+        <label for="visibleSin">Sin</label><br>
+        <input type="checkbox" id="visibleCos" checked onchange="visibleCos()">
+        <label for="visibleCos">Cos</label><br>
+    </div>
+
+    <div id="graph" style="height: 25em; padding-left: 3em">
+    </div>
+
+<div style="margin-left: 30em">
+    <my-component>
+            <input style=" margin-left: 2em" type="checkbox" id="slider" onclick="options()">
+            <label for="slider">Slider</label><br>
+            <input style="margin-top: 1.5em; margin-left: 2em" type="checkbox" id="text" onclick="options()">
+            <label style="margin-top: 1.5em" for="text">Text</label><br>
+    </my-component>
+
+    <my-component2>
+            <div id="slidercontainer">
+              <!--  <input type="range" min="1" max="10" value="1" class="slider" id="rangeSlider" style="visibility: hidden" onchange="inputSlider()"> -->
+                <my-amplitude></my-amplitude>
+            </div>
+           <!-- <div>
+                <input style="margin-top: 1.5em;width: 9em; visibility: hidden" type="number" id="textValue" min="1" max="10" value="1" onchange="inputText()">
+            </div> -->
+    </my-component2>
+</div>
+    <button id="stopButton" class="myButton">Stop</button>
+
+
+    <script>
+        graph();
+    </script>
+</body>
+</html>
