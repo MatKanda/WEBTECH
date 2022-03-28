@@ -1,0 +1,85 @@
+body{
+    background-image: url("../img/science.jpg");
+    color: white;
+    font-size: 27px;
+}
+
+a:visited, a:link{
+    text-decoration: none;
+    color: white;
+}
+
+.upperLogged{
+    position: absolute;
+    top: 2%;
+    margin-left: 5%;
+}
+
+.upperNotLogged{
+    position: absolute;
+    top: 2%;
+    margin-left: 42%;
+}
+
+.logHistory{
+    position: absolute;
+    top: 2%;
+    margin-left: 44.5%;
+}
+
+input{
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    background-image: url("../img/science.jpg");
+    color: white;
+    margin-bottom: 2%;
+}
+
+
+.otherLogins{
+    margin-top: 5%;
+    padding: 1.8%;
+}
+
+
+.loginButton{
+    margin-left: 5%;
+    margin-top: 2%;
+    border-radius: 40%;
+    font-size: 20px;
+}
+.login{
+    margin-top: 5%;
+    margin-left: 45%;
+}
+
+.logOut{
+    position: absolute;
+    margin-top: -2%;
+    margin-left: 80%;
+}
+
+footer{
+    position: fixed;
+    bottom: 2%;
+    margin-left: 41.5%;
+    border-bottom: 2px solid white;
+}
+.register{
+    margin-top: 15%;
+}
+
+.goBack{
+    position: absolute;;
+    bottom: 1%;
+    left: 1%;
+}
+
+.sessions{
+    font-size: 25px;
+    margin-top: 6%;
+    margin-left: 41%;
+    border-spacing: 15px;
+    text-align: center;
+}
