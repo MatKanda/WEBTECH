@@ -1,0 +1,46 @@
+#mapid {
+    height: 50em;
+    /*width: 80%;
+    float: right;*/
+}
+
+#upperSide{
+    float: left;
+    width: 20%;
+    height: 10em;
+}
+
+label{
+    font-size: 25px;
+}
+
+input{
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    margin-top: 1em;
+    margin-bottom: 3em;
+}
+
+
+.inputStyle{
+    font-family: inherit;
+    width: 10em;
+    border: 0;
+    border-bottom: 2px solid black;
+    outline: 0;
+    font-size: 1.3rem;
+    color: black;
+    background: transparent;
+}
+
+
+.inputs{
+    margin-left: 33em;
+}
+
+h1{
+    text-align: center;
+    font-size: 40px;
+    font-style: italic;
+}
