@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+    <title>Dotazník</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="customStyles" href="custom.css">
+    <script src="custom.js"></script>
+
+</head>
+<body style="background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(4,41,58,1) 12%, rgba(6,69,72,1) 20%, rgba(8,100,88,1) 29%, rgba(9,121,99,1) 35%, rgba(8,132,118,1) 43%, rgba(7,139,130,1) 48%, rgba(7,143,137,1) 51%, rgba(6,154,156,1) 59%, rgba(5,168,180,1) 69%, rgba(3,188,214,1) 83%, rgba(1,201,236,1) 92%, rgba(0,212,255,1) 100%)">
+
+<form onsubmit="validateAge();validateMail()" action="mailto:matus.kanda.po@gmail.com" method="post" enctype="text/plain" id="formSubmit">
+    <div class="container" style=" padding-top: 2em; color:white">
+        <h1 style="text-align: center">Dotazník o niečom</h1><br>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="form-group">
+
+                    <label for="name">Meno *</label><br>
+                    <input class="form-control" type="text" id="name" name="name" placeholder="Peter" required onchange="validateText(this)"><br>
+
+                    <label for="surname">Priezvisko *</label><br>
+                    <input class="form-control " type="text" id="surname" name="surname" placeholder="Mrkvička" required onchange="validateText(this)"><br>
+
+                    <label for="place">Miesto pobytu *</label><br>
+                    <input class="form-control " type="text" id="place" name="place" placeholder="Bratislava" required onchange="validateText(this)"><br>
+
+                    <label for="mail">Email *</label><br>
+                    <input class="form-control " type="email" id="mail" name="mail" placeholder="peter.mrkvicka@server.sk" required onchange="validateMail()"><br>
+
+
+                    <label for="birth">Dátum narodenia</label><br>
+                    <input class="form-control " type="date" id="birth" name="birth"><br>
+
+                    <label for="years">Vek</label><br>
+                    <input class="form-control " type="number" id="years" name="years" min="0" max="100" value="0" onchange="validateAge()"><br>
+                </div>
+            </div>
+
+            <div class="col-md-6 pl-5">
+                <div class="form-group">
+
+                    <!--radio button start-->
+                    <p>Aké je vaše pohlavie?</p>
+                    <input type="radio" id="male" name="gender" value="male" onchange="radioOption('male_input')">
+                    <label for="male">Muž</label><br>
+                    <div id="male_input" style="display: none">
+                        <p>Vaša váha?</p>
+                        <input type="number"  name="maleWeight">
+                    </div>
+
+                    <input type="radio" id="female" name="gender" value="female" onchange="radioOption('female_input')">
+                    <label for="female">Žena</label><br>
+                    <div id="female_input" style="display: none">
+                        <p>Ste spokojná s vašou váhou?</p>
+                        <input type="radio" id="femaleYes" name="femaleWeight" >
+                        <label for="male">Áno</label><br>
+                        <input type="radio" id="femaleNo" name="femaleWeight" >
+                        <label for="male">Nie</label><br>
+                    </div><br>
+                    <!--radio button end-->
+
+                    <label>Ako zvládate Coronu?</label><br>
+                    <div class="checkbox" id="coronaCheckbox">
+                        <input type="checkbox" id="perfect" name="perfect">
+                        <label for="perfect"> Perfektne </label><br>
+                        <input type="checkbox" id="good" name="good">
+                        <label for="good"> Dobre </label><br>
+                        <input type="checkbox" id="bad" name="bad">
+                        <label for="bad"> Zle</label><br>
+                        <input type="checkbox" id="suicide" name="suicide">
+                        <label for="suicide">Na slučku</label><br>
+                        <input type="checkbox" id="other" name="other" onchange="optionOther()">
+                        <label for="other">Inak :</label>
+                        <input type="text" id="other_input" name="other_input" style="visibility: hidden">
+                        <br>
+                    </div><br>
+
+                    <label>Povedzte nám niečo o sebe</label>
+                    <div class="form-row" id="decision">
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="infoAboutMe" id="aboutMeYes" value="aboutMeYes" onchange="displaycontinue()">
+                            <label class="form-check-label" for="aboutMeYes">Dobre</label>
+                        </div>
+
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="infoAboutMe" id="aboutMeNo" value="aboutMeNo" onchange="displaycontinue()">
+                            <label class="form-check-label" for="aboutMeNo">niGdy</label>
+                        </div>
+                    </div>
+
+                    <div>
+                        <p id="sad" style="display: none" onchange="displaycontinue()">Škoda :(</p>
+                    </div>
+
+                    <div id="selectMenu" style="display: none">
+                        <select class="custom-select w-50 m-2" name="age" id="selectChild1" onchange="fckingLists(this)" >
+                            <option selected value="do18">do 18 rokov</option>
+                            <option value="nad18">nad 18 rokov</option>
+                        </select>
+
+                        <select class="custom-select w-50 m-2" name="school" id="selectChild2"  onchange="fckingLists(this)" >
+                            <option selected value="ZS">Základná škola</option>
+                            <option value="SS">Stredná škola</option>
+                        </select>
+
+                        <select class="custom-select w-50 m-2" name="level" id="selectChild3" onchange="fckingLists(this)" >
+                            <option selected value="Prvý stupeň">Prvý stupeň</option>
+                            <option value="Druhý stupeň">Druhý stupeň</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <h5>Komentár</h5>
+            <br><textarea id="comment_space" name="komentar" rows="4" cols="50" style=" width: 100em" placeholder="Priestor pre váš komentár"></textarea>
+            <br><textarea id="hiddenTextArea" name="hiddenKomentar"  rows="1" cols="2" style=" width: 10em ; visibility: hidden">Matus Kanda</textarea>
+            <br><button type="submit" class="btn btn-success" style="margin-left: 24em ">Odoslať</button>
+        </div>
+    </div>
+</form>
+
+</body>
+</html>
