@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+    <meta charset="UTF-8">
+    <title>Zadanie 4</title>
+    <link rel="stylesheet" href="css/custom.css">
+    <script src="javaScript/custom.js"></script>
+</head>
+
+
+<body>
+    <h1>Náročná výpočtová logika</h1>
+    <div class="inputs">
+
+        <label for="valueX">Zadajte hodnotu X</label><br>
+        <input  id="valueX" class="inputStyle" type="number" min="1" max="9" step="1" placeholder="0" onchange="checkValueX()" onkeydown="if(event.key==='.' || event.key===','){event.preventDefault();}"><br>
+        <p id="errorX" style="display: none; color: red; margin-top: -3em; padding-bottom: 1em">Nesprávne číslo</p>
+
+        <label for="valueY">Zadajte hodnotu Y</label><br>
+        <input id="valueY" class="inputStyle" type="number" min="1" max="9" step="1" placeholder="0" onchange="checkValueY()" onkeydown="if(event.key==='.' || event.key===','){event.preventDefault();}">
+        <p id="errorY" style="display: none; color: red; margin-top: -3em; padding-bottom: 1em">Nesprávne číslo</p>
+
+    </div>
+
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+        <table id="table">
+        </table>
+        <button id="exitButton" onclick="exitFromTable()">X</button>
+    </div>
+
+    <button class="myButton" type="button" onclick="showTable()">Odoslať</button>
+
+
+</body>
+</html>
