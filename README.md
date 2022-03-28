@@ -1,8 +1,4 @@
 # WEBTECH 2020/2021
 School subject focused on web applications.
 
-These were my first attempts of creating some web pages, later web applications so don't judge me please :P
-
-First half of branches contains just frontend(HTML+JS) webs whereas second half contains backend(PHP+MySQL) as well.
-
-The code is most of the time kind of a mess and of course, today I would program it completely different and do it mainly Object Oriented and more dynamically but here it is what I've created back then. This is just an example branch of my previous work.
+This was big final project on which I've been working with another 3 classmates. It was web app used by teacher to create tests with different types of questions like qustions with multiple answers, math questions, drawing questions, different points for each question, automatically rated questions etc. Each test could be set to in/active omde and had generated unique code which was used by students to join and fill the test. There was also login system for teachers, checking if the student did exit the tab while in test. Teacher was able to see who is currently doing the test and who has already finished. After the test was finished he was able to see student's answers and rate the test.
