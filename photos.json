@@ -1,0 +1,46 @@
+{
+  "photos":
+  [
+    {
+      "src": "images/Navy_Seals.jpg",
+      "title": "Navy SEALs",
+      "description": "US Navy SEALs jednoznačne patri na vrchol rebríčka špeciálnych síl. Skratka SEALs je odvodená z anglických slov SEA, Air a Land (More, vzduch a pevnina), ktorá vyjadruje všestrannosť a schopnosť týchto jednotiek vykonávať vysoko špecializované vojenské vzduchotechnické operácie za akýchkoľvek podmienok."
+
+    },
+    {
+      "src": "images/GIGN.jpg",
+      "title": "GIGN",
+      "description": "Zo všetkých protiteroristických síl vo svete, málokto môže súperiť s francúzskym GIGN (GIGN). Jedná sa o takmer 200-člennú skupinu, ktorá je špeciálne vyškolená na drámy s rukojemníkmi. Tvrdia, že od roku 1973, kedy boli vytvorený už oslobodil viac ako 600 ľudí. Francúzsko má zákon, ktorý zakazuje zverejňovanie ich tvárí."
+    },
+    {
+      "src": "images/Spetsnaz.jpg",
+      "title": "Spetsnaz",
+      "description": "Táto elitná protiteroristická jednotka bola vytvorená KGB v roku 1974 a zostáva v službách pod novodobou organizáciou s označením FSB."
+    },
+    {
+      "src": "images/SAS.jpg",
+      "title": "SAS",
+      "description": "Britská Special Air Service (viac sú známou pod označneím SAS) spolupracuje aj s pechotou s označením SBS. Na otázku o význame úlohy SAS v bojoch, ktoré nasledovali vojnou v Iraku, americký generál Stanley McChrystal odpovedal: “Pochopitelne bez nich by sme to nedokázali.”"
+    },
+    {
+      "src": "images/sayeret_matkal.jpg",
+      "title": "Sayeret matkal",
+      "description": "Izraelský Sayeret Matkal je ďalšou zo svetovo najviac elitných jednotiek. Jej hlavným účelom je spravodajská činnosť a to často funguje hlboko za nepriateľskými líniami. Pri výbere regrutov, ktorí musia vydržať veľmi náročné cvičenia odbornej prípravy, sú neustále pod dohľadom lekárov a psychológov. A dostanú sa sem iba tý najsilnejší."
+    },
+    {
+      "src": "images/SSG.jpg",
+      "title": "SSG",
+      "description": "Special Services Group, alebo SSG sú Pakistanou silou, ktorý je lepšie známou ako “čierne bociany” vzhľadom k špeciálnej pokrývke hlavy ich komanda. Tréning údajne zahŕňa takmer 40 kilometrov dlhý pochod za 12 hodín a 8 kilometrový beh za 20 minút, v plnej výbave."
+    },
+    {
+      "src": "images/Unidad.jpg",
+      "title": "Unidad de Operaciones Especiales",
+      "description": " Španielska sila Unidad de Operaciones Especiales, alebo Naval Special Warfare Force od roku 2009 sú dlhodobo jedným z najlepších európskych a najrešpektovanejších špeciálnych síl. Pôvodne boli ako dobrovoľníci z tzv. obojživelnej jednotky v roku 1952 pod názvom Amphibious Climbing Company a už od tej doby sa stali príkladom pre elitnú bojovú silu."
+    },
+    {
+      "src": "images/Special_boat_service.jpg",
+      "title": "Special boat service",
+      "description": "Výber vojakov zahŕňa vyčerpávajúci vytrvalostný test, školenie v dažďových pralesov v Belizé a školenie boja o prežitie, čo zahŕňa intenzívne výsluchy kandidátov. A máte len dva pokusy prejsť."
+    }
+  ]
+}
