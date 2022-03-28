@@ -1,0 +1,132 @@
+html{
+    background: url("Backround.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.header{
+    text-align: center;
+    font-size : 30px;
+    font-style: italic;
+}
+.small_header{
+    font-size : 25px;
+    font-style: italic;
+    padding-left: 1.5em;
+}
+.section{
+    font-size : 22px;
+}
+
+.profile_img{
+    float: left;
+    border-radius: 8%;
+    margin-right: 2%;
+}
+
+.cv_img{
+    display: block;
+    padding-left: 4em;
+}
+
+.cv_address{
+    font-size: large;
+    padding-left: 15px;
+    padding-bottom: 15px;
+    padding-top: 15px;
+}
+
+.article{
+    padding-right: 10px;
+    padding-left: 10px;
+
+}
+
+.footer {
+    position: relative;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #AFECF2;
+    text-align: center;
+}
+
+.aside{
+    width: 10%;
+    font-size: 25px;
+    float: right;
+    font-style: italic;
+}
+
+.menu {
+    list-style-type: none;
+    margin: 0 ;
+    padding: 0;
+    overflow: hidden;
+}
+
+.menu_li {
+    float: left;
+}
+.menu_li_a {
+    display:block ;
+    text-align: center;
+    padding: 20px;
+    text-decoration : none;
+}
+
+li a:hover {
+    background-color: #BCCAF5;;
+}
+
+.cviko{
+    background-color: #69BEE9;
+}
+.predn{
+    background-color: green;
+}
+
+
+
+tr {
+    display: table-row;
+    vertical-align: inherit;
+    border-color: inherit;
+}
+.caption{
+    text-align: center;
+    font-size : 30px;
+}
+
+.table,th,td {
+    border-collapse: collapse;
+    border-spacing: 2px;
+    margin-left: 120px;
+    margin-top: 50px;
+    border: 1px solid black;
+    text-align: center;
+}
+
+th{
+    background-color: #9EECE4;
+}
+
+.container {
+    display: flex;
+}
+
+.one {
+    flex : 1;
+    background: url("backround6.jpg") no-repeat center center fixed;
+    margin-left: 100px;
+    min-height: 500px;
+}
+
+.two {
+    flex: 2;
+    background: url("backround3.jpg") no-repeat center center fixed;
+    margin-right: 100px;
+
+}
